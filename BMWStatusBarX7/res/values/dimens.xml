@@ -1,0 +1,14 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="main_menu_character_font_size">30px</dimen>
+
+    <!-- 状态栏图标 -->
+    <dimen name="statubar_icon_margin_top">0px</dimen>
+    <dimen name="statubar_icon_sim_type_margin_left">17px</dimen>
+    <dimen name="status_icon_sim_type_margin_top">-10px</dimen>
+    <dimen name="status_icon_signal_margin_left">1px</dimen>
+</resources>

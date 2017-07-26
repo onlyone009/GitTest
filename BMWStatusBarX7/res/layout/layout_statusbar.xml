@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="50px"
+        android:gravity="center_vertical"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal">
+        
+	     <!-- 显示时间 -->
+	     <LinearLayout 
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:focusable="false"
+	         android:gravity="center_vertical"
+	         android:orientation="horizontal">
+	         
+	         <TextView
+	             android:id="@+id/tv_time_hour"
+	             android:layout_width="wrap_content"
+	             android:layout_height="wrap_content"
+	             android:textColor="@color/white"
+	             android:focusable="false"
+	             android:textSize="@dimen/main_menu_character_font_size"
+	             android:text="25"/>
+	         
+	         <!-- 时间用的冒号 -->
+	         <TextView 
+	             android:layout_width="wrap_content"
+	             android:layout_height="wrap_content"
+	             android:textColor="@color/white"
+	             android:focusable="false"
+	             android:textSize="@dimen/main_menu_character_font_size"
+	             android:text="@string/colon"/>
+	         
+	        <TextView 
+	             android:id="@+id/tv_time_min"
+	             android:layout_width="wrap_content"
+	             android:layout_height="wrap_content"
+	             android:textColor="@color/white"
+	             android:focusable="false"
+	             android:textSize="@dimen/main_menu_character_font_size"
+	             android:text="61"/>
+	     </LinearLayout>
+	    
+	    <!-- 状态栏图标 -->
+	    <LinearLayout 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="@dimen/statubar_icon_sim_type_margin_left"
+	        android:focusable="false"
+	        android:layout_gravity="center"
+	        android:gravity="center_vertical"
+	        android:orientation="horizontal">
+            
+            <!-- sim卡状态类型 -->
+            <ImageView
+                android:id="@+id/iv_sim_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:focusable="false"
+                android:src="@drawable/status_sim_3g"/>
+            
+            <!-- sim卡信号强度 -->
+            <ImageView
+                android:id="@+id/iv_sim_strength"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/status_icon_signal_margin_left"
+                android:gravity="center_vertical"
+                android:focusable="false"
+                android:src="@drawable/status_sim_signal_1"/>
+
+	        <!-- 数据方向 -->
+	        <ImageView
+	            android:id="@+id/iv_data_direction"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="10px"
+	            android:gravity="center_vertical"
+	            android:focusable="false"
+	            android:src="@drawable/status_conn_signal_inout"/>
+
+	        <!-- wifi强度 -->
+	        <ImageView
+	            android:id="@+id/iv_wifi_strength"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="10px"
+	            android:gravity="center_vertical"
+	            android:visibility="gone"
+	            android:focusable="false"
+	            android:src="@drawable/status_wifi_signal_0"/>
+	       
+            <!-- 蓝牙状态 -->
+	        <ImageView
+	            android:id="@+id/iv_bt"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="10px"
+	            android:gravity="center_vertical"
+	            android:focusable="false"
+	            android:visibility="gone"
+	            android:src="@drawable/bt_off"/>
+	        
+	        <!-- u盘是否挂载 -->
+	        <ImageView
+	            android:id="@+id/iv_udisk"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="10px"
+	            android:gravity="center_vertical"
+	            android:focusable="false"
+	            android:src="@drawable/udisk"/>
+	        
+	        <!-- gps是否定位 -->
+	        <ImageView
+	            android:id="@+id/iv_gps"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="10px"
+	            android:gravity="center_vertical"
+	            android:focusable="false"
+	            android:src="@drawable/statusbar_gps_animation"/>
+	    </LinearLayout>
+	</LinearLayout>
+</LinearLayout>
